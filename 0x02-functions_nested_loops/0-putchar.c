@@ -1,17 +1,10 @@
 #include "main.h"
 
-<<<<<<< HEAD
 
 /**
  * main - prints _putchar
  *
  * Return: 0 (success)
-=======
-/**
- * main - prints _putchar
- *
- * Return:0 (Success)
->>>>>>> initial commit
  */
 
 int main(void)
