@@ -5,7 +5,7 @@
  * @n: Determines the length of the line
  */
 
-void print_line(int c)
+void print_line(int n)
 {
 	int counter = 0;
 
