@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * create _array - create array
+ * create_array - create array
  * @size: size of array
  * @c: char to assign
  * Return: pointer to array or NULL if it fails
@@ -16,7 +16,7 @@ char *create_array(unsigned int size, char c)
 	if (size == 0 || str == NULL)
 		return (NULL);
 
-	for (i =0; i < size; i++)
+	for (i = 0; i < size; i++)
 		str[i] = c;
 	return (str);
 }
