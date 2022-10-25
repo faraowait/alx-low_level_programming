@@ -4,11 +4,12 @@
 #include <stdlib.h>
 
 /**
- * struct listint_s * singly linked list
+ * struct listint_s -  singly linked list
  * @n: interger
  * @next: points to the next node
  *
- * Description: singly linked list node structure for the project
+ * Description: singly linked list node structure
+ * for  project
  */
 
 typedef struct listint_s
