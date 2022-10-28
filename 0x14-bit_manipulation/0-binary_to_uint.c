@@ -4,7 +4,7 @@
  * binary_to_unit - converts a binary number to unsigned int
  * @b: string containing the binary number
  *
- * Return: the converted number
+ * Return: the converted numbrer
  */
 unsigned int binary_to_unit(const char *b)
 {
