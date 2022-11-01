@@ -47,8 +47,8 @@ void close_file(int fd)
 
 /**
  * main - Copies the contents of a file to another file.
- * @argc: The number of arguements supplied to the program.
- * @argv: An array of pointers to the arguements.
+ * @argc: The number of arguments supplied to the program.
+ * @argv: An array of pointers to the arguments.
  *
  * Return: 0 on success.
  *
@@ -72,6 +72,7 @@ int main(int argc, char *argv[])
 	from = open(argv[1], O_RDONLY);
 	r = read(from, buffer, 1024);
 	to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
+
 	do {
 		if (from == -1 || r == -1)
 		{
@@ -89,10 +90,12 @@ int main(int argc, char *argv[])
 			free(buffer);
 			exit(99);
 		}
+
 		r = read(from, buffer, 1024);
 		to = open(argv[2], O_WRONLY | O_APPEND);
 
 	} while (r > 0);
+
 	free(buffer);
 	close_file(from);
 	close_file(to);
